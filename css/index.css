@@ -119,7 +119,7 @@ body {
 @-webkit-keyframes txt {
     0% {
         left:30%;
-        top:0;
+        top:-0.5rem;
     }
     100% {
         left:30%;
@@ -136,4 +136,37 @@ body {
 .page_01_02 img {
     width:6.66rem;
     height:10.98rem;
+}
+.page_01_03 {
+    width:7.3rem;
+    height:7.14rem;
+    -webkit-transform:translate(-2.66rem,-2.72rem);
+}
+.page_01_03 img {
+    width:100%;
+}
+@-webkit-keyframes fenye {
+    0% {
+        -webkit-transform:translate(-2.66rem,-4rem);
+    }
+    100% {
+        -webkit-transform:translate(-2.66rem,-2.72rem);
+    }
+}
+.page_01_04{
+    width:4.86rem;
+    height:6.36rem;
+    position:absolute;
+    right:-1.1rem;
+    top:2rem;
+}
+@-webkit-keyframes fenye02 {
+    0% {
+        right:-4rem;
+        top:1rem;
+    }
+    100% {
+        right:-1.1rem;
+        top:2rem;
+    }
 }
