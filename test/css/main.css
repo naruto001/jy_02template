@@ -93,14 +93,14 @@ html,body {
 	bottom:0;
 	margin:0 auto;
 	overflow-x:hidden;
-	background:url(../img/bg.png) no-repeat;
-	background-size:100% 100%;
 }
 .content {
 	width:13.92rem;
 	height:24.06rem;
 	background:rgba(255,255,255,0.73);
 	margin:0.6rem auto;
+	background:url(../img/bg.png) no-repeat;
+	background-size:100% 100%;
 }
 .content .top {
 	width:100%;
@@ -168,4 +168,16 @@ html,body {
 }
 .content .main_bold {
 	font-weight:bold
+}
+.page_01 {
+	width: 100%;
+    height: 100%;
+   /* background: -webkit-linear-gradient(top, #030921 0%, #000000 100%);*/
+    position: relative;
+}
+.page_01_01 {
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
 }
