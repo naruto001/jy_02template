@@ -414,3 +414,50 @@ body {
     left:13.63%;
     top:72.31%;
 }
+.page_02_30 {
+    width:83.2%;
+    position:absolute;
+    left:8.4%;
+    top:22.29%;
+}
+.page_02_31 {
+    width:83.2%;
+    position:absolute;
+    left:8.4%;
+    top:26.29%;
+}
+.page_02_32 {
+    width:83.2%;
+    position:absolute;
+    left:8.4%;
+    top:30.29%;
+}
+.page_02_33 {
+    width:83.2%;
+    position:absolute;
+    left:8.4%;
+    top:34.29%;
+}
+.page_02_34 {
+    width:83.2%;
+    position:absolute;
+    left:8.4%;
+    top:38.29%;
+}
+.page_02_35 {
+    width:83.2%;
+    position:absolute;
+    left:8.4%;
+    top:48.29%;
+}
+.page_02 span {
+    font-weight:bolder;
+}
+.page_02_36 {
+    width:83.2%;
+    height:29.54%;
+    position:absolute;
+    left:8.4%;
+    bottom:17.32%;
+    z-index:99999;
+}
