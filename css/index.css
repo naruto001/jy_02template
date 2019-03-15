@@ -189,17 +189,17 @@ body {
     width:43.87%;
     position:absolute;
     right:17.1%;
-    bottom:40%;
+    bottom:41%;
 }
 @-webkit-keyframes tit02 {
     0% {
         right:-43.87%;
-        bottom:40%;
+        bottom:41%;
         opacity:0;
     }
     100% {
         right:17.1%;
-        bottom:40%;
+        bottom:41%;
         opacity:1;
     }
 }
