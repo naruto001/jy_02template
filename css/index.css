@@ -465,4 +465,13 @@ body {
     width:100%;
     height:100%;
 }
+.page_02_40 {
+    width:83.2%;
+    position:absolute;
+    left:8.4%;
+    top:19.29%;
+}
+.page_02_40 img {
+    border-radius:0.2rem;
+}
 
