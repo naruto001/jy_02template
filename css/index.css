@@ -460,6 +460,7 @@ body {
     left:8.4%;
     bottom:17.32%;
     z-index:99999;
+    overflow:hidden;
 }
 .page_02_36 #container {
     width:100%;
