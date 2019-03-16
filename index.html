@@ -37,9 +37,8 @@
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
-    <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?key=&amp;v=1.4&amp;services=true"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=1.4&amp;ak=&amp;services=true&amp;t=20130716024058"></script> -->
-    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&amp;v=1.4&amp;services=true"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=1.4&amp;ak=&amp;services=true&amp;t=20130716024058"></script>
 </head>
 
 <body>
@@ -329,17 +328,17 @@
             </div>
         </div>
     </div>
-    <script src="https://webapi.amap.com/maps?v=1.4.13&key=您申请的key值"></script>
-  <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
-  <script>
-    var map = map = new AMap.Map('container', {
-        resizeEnable: true
-    });
-    
-    map.on("complete", function(){
-       log.success("地图加载完成！");  
-    });
-  </script>
+    <script>
+    var map = new BMap.Map("container"); //创建地图实例
+    var point = new BMap.Point(106.373635, 27.857857); //创建中心点
+    map.centerAndZoom(point, 15); //初始化地图实例，并创建地图中心点和地图层级
+    var marker = new BMap.Marker(point); //创建点标注
+    map.addOverlay(marker); //将标注点添加到地图上
+    map.enableScrollWheelZoom(true); //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom(); //启用地图惯性拖拽，默认禁用
+    map.enablePinchToZoom(); //启用双指操作缩放，默认启用
+    map.enableInertialDragging(true) //启用地图惯性拖拽，默认禁用
+    </script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'vertical',
