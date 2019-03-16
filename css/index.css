@@ -205,7 +205,7 @@ body {
 }
 .go {
     position:absolute;
-    bottom:2%;
+    bottom:1.5%;
     width:9.7%;
     left:45%;
     -webkit-animation:go 1.5s linear 0s infinite;
@@ -455,7 +455,7 @@ body {
 }
 .page_02_36 {
     width:83.2%;
-    /*height:29.54%;*/
+    height:29.54%;
     position:absolute;
     left:8.4%;
     bottom:17.32%;
@@ -474,4 +474,41 @@ body {
 .page_02_40 img {
     border-radius:0.2rem;
 }
+.page_02_41 {
+    width:83.2%;
+    position:absolute;
+    left:8.4%;
+    top:42.29%;
+    z-index:9999;
+}
+.page_02_41 p {
+    font-size:0.56rem;
+    color:#333;
+    line-height:1.12rem;
+    text-align:justify;
+}
 
+.page_02_50 {
+    width:83.47%;
+    position:absolute;
+    left:8.4%;
+    top:19.29%;
+}
+.page_02_51 {
+    width:38.4%;
+    position:absolute;
+    right:8.4%;
+    top:49.39%;
+}
+.page_02_52 {
+    width:42.13%;
+    position:absolute;
+    left:8.4%;
+    top:49.39%;
+}
+.page_02_53 {
+    width:42.13%;
+    position:absolute;
+    left:8.4%;
+    top:64.62%;
+}
