@@ -365,11 +365,36 @@
                                 <img src="img/zf09.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="2.2s" alt=""/>
                             </a>
                         </div>
+                        <div class="page_03_11">
+                            <img src="img/zf10.png" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="3s" alt="">
+                        </div>
+                        <div class="page_03_12">
+                            <p class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="3.2s">温馨提示</p>
+                        </div>
+                        <div class="page_03_13">
+                            <p class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="3.4s">即日起转发就得积分，积分可兑换门票，赶快行动吧！</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="cover" style="display:none;">
+            <div class="cover_box">
+                <img src="img/zf11.png" alt="">
+                <img src="img/zf12.png" alt="">
+            </div>
+        </div>
     </div>
+    <script>
+        var oZF = document.querySelector('.page_03_10');
+        var oCover = document.querySelector('.cover');
+        oZF.onclick = function () {
+            oCover.style.display = "block";
+        }
+        oCover.onclick = function () {
+            this.style.display= "none";
+        }
+    </script>
     <script>
         var map = new BMap.Map("container"); //创建地图实例
         var point = new BMap.Point(106.373635, 27.857857); //创建中心点

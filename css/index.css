@@ -596,10 +596,69 @@ body {
     width:26.93%;
     position:absolute;
     left:37.07%;
-    top:65.32%;
+    top:57.32%;
     z-index:999999999999;
 }
-
+.page_03_11 {
+    width:33.33%;
+    position:absolute;
+    left:32.93%;
+    top:41.38%;
+    z-index:99999;
+}
+.page_03_12 {
+    width:22.4%;
+    position:absolute;
+    left:38.4%;
+    top:39.73%;
+    z-index:9999999;
+}
+.page_03_12 p {
+    font-size:0.6rem;
+    color:#fff;
+    text-align:center;
+}
+.page_03_13 {
+    width:56%;
+    position:absolute;
+    left:26%;
+    top:44.23%;
+    z-index:999999;
+}
+.page_03_13 p {
+    font-size:0.56rem;
+    color:#fff;
+    line-height:0.8rem;
+    text-align:justify;
+}
+.cover {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:9999999;
+    background:rgba(0,0,0,0.7);
+}
+.cover_box {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.cover img:nth-of-type(1)  {
+    width:77.47%;
+    position:absolute;
+    left:18.8%;
+    top:3%;
+    z-index:999999999999;
+}
+.cover img:nth-of-type(2) {
+    width:31.33%;
+    position:absolute;
+    left:33.07%;
+    bottom:26.24%;
+    z-index:999999999999;
+}
 
 
 
