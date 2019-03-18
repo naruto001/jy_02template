@@ -153,19 +153,10 @@ body {
 .page_01_04{
     width:25.73%;
     position:absolute;
-    right:-12%;
+    right:-11%;
     top:5%;
 }
-@-webkit-keyframes fenye02 {
-    0% {
-        right:-30%;
-        top:10%;
-    }
-    100% {
-        right:-12%;
-        top:5%;
-    }
-}
+
 .page_01_05 {
     width:35.6%;
     position:absolute;
