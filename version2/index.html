@@ -72,10 +72,10 @@
                         <div class="page_01_04">
                             <img src="img/fen02.png" class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s" alt="">
                         </div>
-                        <div class="page_01_05" style="-webkit-animation:tit01 3s 1 linear">
+                        <div class="page_01_05">
                             <img src="img/tit01.png" class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s" alt="">
                         </div>
-                        <div class="page_01_06" style="-webkit-animation:tit02 3s 1 linear">
+                        <div class="page_01_06">
                             <img src="img/tit02.png" class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s" alt="">
                         </div>
                         <div class="go">
@@ -224,7 +224,7 @@
                         </div>
                         
                         <div class="page_02_36">
-                            <div id="container"></div>
+                            <div id="container" class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="2s"></div>
                         </div>
                        <!--  <div id="container" style="width:12.48rem;height:7.88rem; position:absolute;bottom:17.32%;left:9.47%;" class="ani"  swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s"></div> -->
                     
@@ -349,7 +349,7 @@
                         <div class="page_03_07">
                             <img src="img/zf07.png" class="ani" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="1.2s" swiper-animate-delay="1.6s" alt="">
                         </div>
-                        <div class="page_03_08">
+                        <div class="page_03_08">                                   
                             <img src="img/zf08.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="2s" alt="">
                         </div>
                         <div class="page_03_09">
@@ -378,13 +378,45 @@
                 </div>
             </div>
         </div>
+
         <div class="cover" style="display:none;">
             <div class="cover_box">
                 <img src="img/zf11.png" alt="">
                 <img src="img/zf12.png" alt="">
             </div>
         </div>
+
+        <!-- 浮层 -->
+        <div class="mask">
+            <span class="mask_close"></span>
+            <a href="javascript:;"><span class="click_btn"></span></a>
+            <div class="preview_img">
+                <img src="img/small_img.png" alt=""/>
+            </div>
+        </div>
+        <!-- end 浮层 -->
     </div>
+
+    <script>
+        setTimeout(function(){
+            $('.preview_img').trigger('click')
+        },1000)
+
+        $('.preview_img').on('click',function(){
+            $(this).animate({"right":-146},400,function(){
+                $(this).hide();
+                $('.mask').animate({"left":0},600);
+            });
+        });
+
+        $('.mask_close').on('click',function() {
+            $('.mask').animate({
+                "left":"100%"
+            },600,function(){
+                $('.preview_img').show().animate({"right":0},400)
+            });
+        });
+    </script>
     <script>
         var oZF = document.querySelector('.page_03_10');
         var oCover = document.querySelector('.cover');

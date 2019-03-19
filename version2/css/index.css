@@ -3,7 +3,7 @@ body,ul,p,h1,h2,h3,h4,h5,h6,form,dl,dd,select,input,textarea {
     margin:0;
     padding:0;
     font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
-	-webkit-user-select:none;
+    -webkit-user-select:none;
 }
 li {
     list-style-type:none;
@@ -15,8 +15,8 @@ a {
     text-decoration:none;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
 }a,input,button {
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
-	-webkit-appearance:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-appearance:none;
     border-radius:0;
 }
 /* end reset */
@@ -161,7 +161,7 @@ body {
     width:35.6%;
     position:absolute;
     left:38.93%;
-    top:50%;
+    top:48%;
 }
 @-webkit-keyframes tit01 {
     0% {
@@ -243,9 +243,11 @@ body {
 }
 .page_02_02 {
     width:92.8%;
+    height:90.18%;
     position:absolute;
     left:3.6%;
     top:2.5%;
+    overflow:hidden;
 }
 .page_02 img {
     width:100%;
@@ -263,7 +265,7 @@ body {
     width:5.4%;
     position:absolute;
     right:5.7%;
-    bottom:12.25%;
+    top:83.91%;
     z-index:99;
 }
 .page_02_05 {
@@ -490,19 +492,20 @@ body {
     width:38.4%;
     position:absolute;
     right:8.4%;
-    top:49.39%;
+    top:52.39%;
 }
 .page_02_52 {
     width:42.13%;
     position:absolute;
     left:8.4%;
-    top:49.39%;
+    top:52.39%;
+    overflow:hidden;
 }
 .page_02_53 {
     width:42.13%;
     position:absolute;
     left:8.4%;
-    top:64.62%;
+    top:69.62%;
 }
 
 /* 转发 */
@@ -533,7 +536,7 @@ body {
     width:100%;
     position:absolute;
     left:0;
-    bottom:0;
+    top:44.23%;
     z-index:999999;
 }
 .page_03_04 {
@@ -651,5 +654,49 @@ body {
     z-index:999999999999;
 }
 
-
+/* 浮层  */
+.mask {
+    position:fixed;
+    bottom:0;
+    left:100%;
+    width:100%;
+    height:2.0rem;
+    background:url(../img/big_img.jpg) no-repeat scroll center;
+    background-size:100% 100%;
+    z-index:9999999999999;
+}
+.mask_close {
+    background:url(../img/close_btn.png) no-repeat center center;
+    position:absolute;
+    top:0;
+    left:0.4rem;
+    margin-left:0px;
+    height:100%;
+    cursor:pointer;
+}
+.click_btn {
+    position:absolute;
+    top:0;
+    left:4.0rem;
+    margin-left:0px;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+.preview_img {
+    position:fixed;
+    right:0;
+    bottom:0;
+    width:3.68rem;
+    height:2.48rem;
+    cursor:pointer;
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform:rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(360deg);
+    }
+}
 
