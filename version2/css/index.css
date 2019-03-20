@@ -723,3 +723,15 @@ body {
     top:17.28%;
     width:84.8%;
 }
+@-webkit-keyframes flimg {
+    0% {
+        opacity:0;
+        left:-20%;
+        top:17.28%;
+    }
+    100% {
+        opacity:1;
+        left:7.6%;
+        top:17.28%;
+    }
+}
