@@ -719,7 +719,7 @@ body {
 }
 .flotage_box img {
     position:absolute;
-    left:7.6%;
+    left:9.6%;
     top:17.28%;
     width:84.8%;
 }
@@ -731,7 +731,7 @@ body {
     }
     100% {
         opacity:1;
-        left:7.6%;
+        left:9.6%;
         top:17.28%;
     }
 }
