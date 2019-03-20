@@ -387,25 +387,45 @@
         </div>
 
         <!-- 浮层 -->
-        <div class="mask">
+       <!--  <div class="mask">
             <span class="mask_close"></span>
             <a href="javascript:;"><span class="click_btn"></span></a>
             <div class="preview_img">
                 <img src="img/small_img.png" alt=""/>
             </div>
+        </div> -->
+        <!-- end 浮层 -->
+
+        <!-- 浮层 -->
+        <div class="flotage" style="display:none;">
+            <div class="flotage_box">
+                <img src="img/flotage01.png" class="" alt=""/>
+            </div>
         </div>
         <!-- end 浮层 -->
     </div>
-
+    
     <script>
-        setTimeout(function(){
-            $('.preview_img').trigger('click')
-        },1000)
+        window.onload = function() {
+            var oFlotage = document.querySelector('.flotage');
+            setTimeout(function() {
+                oFlotage.style.display = "block";
+            },5000)
+        }
+    </script>
+    <script>
+        // setTimeout(function(){
+        //     $('.preview_img').trigger('click')
+        // },1000)
+        // $('.mask').show();
 
         $('.preview_img').on('click',function(){
-            $(this).animate({"right":-146},400,function(){
-                $(this).hide();
-                $('.mask').animate({"left":0},600);
+            $(this).animate(
+                {"right":-146},
+                400,
+                function(){
+                    $(this).hide();
+                    $('.mask').animate({"left":0},600);
             });
         });
 
